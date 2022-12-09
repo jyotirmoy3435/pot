@@ -6,10 +6,21 @@
     android:layout_height="match_parent"
     tools:context=".SecondFragment">
 
-    <TextView
-        android:id="@+id/textview_second"
+    <Button
+        android:id="@+id/silence_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:text="Silence"
+        app:layout_constraintBottom_toTopOf="@id/dnd_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/dnd_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DND"
         app:layout_constraintBottom_toTopOf="@id/button_second"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -23,5 +34,5 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/textview_second" />
+        app:layout_constraintTop_toBottomOf="@id/dnd_btn" />
 </androidx.constraintlayout.widget.ConstraintLayout>
